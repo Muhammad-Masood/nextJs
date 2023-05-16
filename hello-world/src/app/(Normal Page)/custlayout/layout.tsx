@@ -7,7 +7,7 @@ export default function RootLayout({
     <html lang="en">
       {/* ye children sirf page.tsx ko janta hai */}
       <body>
-        <h1>Navigation Bar</h1>
+        <h1>Custom Navigation Bar</h1>
         {children}
         </body> 
     </html>
