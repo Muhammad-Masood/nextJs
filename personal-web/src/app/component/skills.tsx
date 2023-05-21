@@ -22,13 +22,21 @@ export default function Skills() {
     const content = (
         <ul className={`flex flex-row flex-wrap 
         content-start list-none py-4 gap-2 ${activeTab == "soft" ? "justify-start" : "justify end"}`} >
-            {/* {skills[activeTab].map(({ icon, text}) => (
-                <li key = {text} className={'skill'}>
-                    <span> {icon} </span> {text}
-                </li>
-            ))} */}
+            {activeTab === "soft" ? (
+        softSkills.map(({ icon, text }) => (
+            <li key={text} className="skill">
+            <span>{icon}</span> {text}
+            </li>
+        ))
+        ) : (
+        hardSkills.map(({ icon, text }) => (
+            <li key={text} className="skill">
+            <span>{icon}</span> {text}
+            </li>
+        ))
+        )}
         </ul>
-    )
+    );
     return(
         <div>
             {skillSection}
