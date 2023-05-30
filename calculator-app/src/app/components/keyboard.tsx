@@ -9,9 +9,9 @@ const buttons = [
 
 const Keyboard  = () => {
     return(
-        <div className="flex mt-20">
+        <div className="flex-direction-row mt-5">
             {buttons.map((row,rowIndex) => (
-                <div key ={rowIndex} className="row">
+                <div key ={rowIndex} className="flex">
                 {row.map((button,buttonIndex) => (
                     <div>
                         <button className="m-5 bg-zinc-200">
